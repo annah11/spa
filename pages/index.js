@@ -1,10 +1,10 @@
-// app/page.js
-"use client";
+// pages/index.js
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
 
-export default function HomePage() {
+export default function Home() {
   const { register, handleSubmit, reset } = useForm();
   const [records, setRecords] = useState([]);
   const [selectedRecord, setSelectedRecord] = useState(null);
